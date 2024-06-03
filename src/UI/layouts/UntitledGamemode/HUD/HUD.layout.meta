@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{6EF5C0B8F607CC8E}UI/layouts/UntitledGamemode/HUD/HudLayout.layout"
+ Configurations {
+  LayoutResourceClass PC {
+  }
+  LayoutResourceClass XBOX_ONE : PC {
+  }
+  LayoutResourceClass XBOX_SERIES : PC {
+  }
+  LayoutResourceClass PS4 : PC {
+  }
+  LayoutResourceClass HEADLESS : PC {
+  }
+ }
+}

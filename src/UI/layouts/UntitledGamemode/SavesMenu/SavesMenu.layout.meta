@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{D9F37B8ED6A6D048}UI/layouts/UntitledGamemode/SavesMenu/SavesMenu.layout"
+ Configurations {
+  LayoutResourceClass PC {
+  }
+  LayoutResourceClass XBOX_ONE : PC {
+  }
+  LayoutResourceClass XBOX_SERIES : PC {
+  }
+  LayoutResourceClass PS4 : PC {
+  }
+  LayoutResourceClass HEADLESS : PC {
+  }
+ }
+}

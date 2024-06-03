@@ -1,0 +1,63 @@
+ButtonWidgetClass {
+ Name "Button"
+ Slot LayoutSlot "{60D2F0E408D82706}" {
+  Padding 0 0 0 10
+ }
+ components {
+  MI3_SaveGameButtonComponent "{60D4CE2173C24188}" {
+   m_bMouseOverToFocus 1
+   m_BackgroundDefault 0 0 0 0.5
+   m_BackgroundHovered 0 0 0 0.75
+   m_BackgroundSelected 0 0 0 0.75
+   m_BackgroundSelectedHovered 0 0 0 0.75
+   m_BackgroundClicked 0 0 0 1
+  }
+ }
+ style blank
+ {
+  SizeLayoutWidgetClass "{60D2F0E1E2DCCEDA}" {
+   Name "SizeLayout"
+   Slot ButtonWidgetSlot "{5548E6E7E6AEDDC1}" {
+    HorizontalAlign 3
+    VerticalAlign 3
+   }
+   AllowHeightOverride 1
+   HeightOverride 80
+   {
+    OverlayWidgetClass "{60D2F0E1E2DCCED8}" {
+     Name "Overlay"
+     Slot ButtonWidgetSlot "{5548E6E7F213FB11}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+      Padding 4 4 4 4
+     }
+     {
+      TextWidgetClass "{60D2F0E601B97BD2}" {
+       Name "Title"
+       Slot OverlayWidgetSlot "{60D2F0E601B97AED}" {
+       }
+      }
+      ImageWidgetClass "{60D2F0E1E2DCA717}" {
+       Name "Background"
+       Slot OverlayWidgetSlot "{5548E6E7DF4EE313}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+      }
+      PanelWidgetClass "{60D2F0E1E2DCA716}" {
+       Name "Border"
+       Slot OverlayWidgetSlot "{55367D8E4A13554A}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+        Padding -4 -4 -4 -4
+       }
+       Clipping False
+       Color 0.761 0.386 0.078 1
+       style outline_4px
+      }
+     }
+    }
+   }
+  }
+ }
+}

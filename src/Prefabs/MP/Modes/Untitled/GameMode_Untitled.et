@@ -1,0 +1,48 @@
+MI3_GameMode : "{0F307326459A1395}Prefabs/MP/Modes/GameMode_Base.et" {
+ ID "56B2B479C6B96951"
+ components {
+  SCR_RespawnSystemComponent "{56B2B4793051E7C9}" {
+   m_SpawnLogic SCR_AutoSpawnLogic "{5F194D814AA9EF00}" {
+   }
+  }
+  MI3_GarrisonManagerComponent "{60C4ED61B5617A26}" {
+   m_bUseRangeBasedLoading 0
+   m_fGarrisonLoadDistance 500
+   m_aFactionConfigs {
+    MI3_GarrisonFactionConfig "{60C4ED61DA3F59AD}" {
+     m_sFactionKey "US"
+     m_sSquadLeader "{E45F1E163F5CA080}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_SL.et"
+     m_sRifleman "{26A9756790131354}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Rifleman.et"
+     m_sGrenadier "{84029128FA6F6BB9}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_GL.et"
+     m_sMedic "{C9E4FEAF5AAC8D8C}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Medic.et"
+     m_sMachineGunner "{1623EA3AEFACA0E4}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_MG.et"
+     m_sLightMachineGunner "{5B1996C05B1E51A4}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_AR.et"
+     m_sAntiTank "{27BF1FF235DD6036}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_LAT.et"
+     m_sSharpShooter "{0F6689B491641155}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Sniper.et"
+    }
+    MI3_GarrisonFactionConfig "{60C4ED61DE7ABF02}" {
+     m_sFactionKey "USSR"
+     m_sSquadLeader "{5436629450D8387A}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_SL.et"
+     m_sRifleman "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+     m_sGrenadier "{8E0FE664CE7D1CA9}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_GL.et"
+     m_sMedic "{AB9726163EC1BD81}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Medic.et"
+     m_sMachineGunner "{96C784C502AC37DA}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_MG.et"
+     m_sLightMachineGunner "{23ADBBC31B6A3DC6}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_AR.et"
+     m_sAntiTank "{1C78331E156A3D65}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_AT.et"
+     m_sSharpShooter "{976AC400219898FA}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Sharpshooter.et"
+    }
+    MI3_GarrisonFactionConfig "{60C4ED61D23DB7AF}" {
+     m_sFactionKey "FIA"
+     m_sSquadLeader "{677B515F119222C2}Prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_SL.et"
+     m_sRifleman "{84B40583F4D1B7A3}Prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Rifleman.et"
+     m_sMedic "{45A02CA25CBA9443}Prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Medic.et"
+     m_sMachineGunner "{58E47E5A4D599432}Prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_MG.et"
+     m_sAntiTank "{D25BC9815A9F9E8D}Prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_AT.et"
+     m_sSharpShooter "{CE33AB22F61F3365}Prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Sharpshooter.et"
+    }
+   }
+  }
+ }
+ PlayerControllerPrefab "{48AB60A6C90BBE57}Prefabs/Characters/Core/CustomPlayerControllerMP.et"
+ m_sTestGroupResource "{5BEA04939D148B1E}Prefabs/Groups/INDFOR/Group_FIA_FireTeam.et"
+}

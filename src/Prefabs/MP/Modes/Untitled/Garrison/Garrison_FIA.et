@@ -1,0 +1,9 @@
+MI3_Garrison : "{3D5D8825F5C6F558}Prefabs/MP/Modes/Untitled/Garrison/Garrison_Base.et" {
+ ID "60E30C182E22240C"
+ components {
+  MI3_GarrisonGroupManagerComponent "{60E30C182E222436}" {
+   m_sAiGroupPrefab "{242BC3C6BCE96EA5}Prefabs/Groups/INDFOR/Group_FIA_Base.et"
+  }
+ }
+ m_sFactionKey "FIA"
+}

@@ -1,0 +1,14 @@
+MI3_PlayerController : "{225E51284CC95CFA}Prefabs/Characters/Core/DefaultPlayerControllerMP.et" {
+ ID "1A9BA6BEFA06E3B1"
+ components {
+  MI3_ConcealmentControllerComponent "{60AED889034DA89F}" {
+  }
+  MI3_HudManagerComponent "{60AEE92B3502392A}" {
+   m_sHudLayout "{6EF5C0B8F607CC8E}UI/layouts/UntitledGamemode/HUD/HUD.layout"
+   m_iUndercoverTextUnhideSpeed 20
+   m_iUndercoverTextHideSpeed 5
+  }
+  MI3_SavegameMenuControllerComponent "{60E2CB2BA8721ADA}" {
+  }
+ }
+}

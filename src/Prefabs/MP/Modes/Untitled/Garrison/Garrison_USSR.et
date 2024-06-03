@@ -1,0 +1,9 @@
+MI3_Garrison : "{3D5D8825F5C6F558}Prefabs/MP/Modes/Untitled/Garrison/Garrison_Base.et" {
+ ID "60E30C182E22240C"
+ components {
+  MI3_GarrisonGroupManagerComponent "{60E30C182E222436}" {
+   m_sAiGroupPrefab "{B50B7BF31273C2A6}Prefabs/Groups/OPFOR/Group_USSR_Base.et"
+  }
+ }
+ m_sFactionKey "USSR"
+}

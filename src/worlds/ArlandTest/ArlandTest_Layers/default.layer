@@ -1,0 +1,124 @@
+SCR_AIWorld AIWorld : "{01DC74137CFDDB6A}Prefabs/AI/SCR_AIWorld_Arland.et" {
+ components {
+  NavmeshWorldComponent "{5584F30E67F617AD}" {
+   NavmeshSettings NavmeshWorld "{50FC63BEBE3973C5}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{60B8A2995A7E8BC2}" {
+     NavmeshFile "{D8EF7131FB31AF97}worlds/GameMaster/Navmeshes/GM_Arland.nmn"
+    }
+   }
+  }
+  NavmeshWorldComponent "{5584F30EEFEE1223}" {
+   NavmeshSettings ChimeraNavmeshWorld "{50FC63BEBE3973C5}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{60B8A299509CF377}" {
+     NavmeshFile "{A0AEEB1E7EF474FA}worlds/GameMaster/Navmeshes/GM_Arland_vehicles.nmn"
+    }
+   }
+  }
+ }
+ coords 1379.357 39.01 2770.763
+}
+PerceptionManager PerceptionManager1 : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
+ coords 1379.894 39.01 2769.167
+}
+SCR_CampaignFactionManager UntitledFactionManager1 : "{0B66D2189234B0C0}Prefabs/MP/Modes/Untitled/UntitledFactionManager.et" {
+ coords 3117.327 43.604 2429.999
+}
+MI3_GameMode GameMode_Untitled : "{CAD78FAE87512420}Prefabs/MP/Modes/Untitled/GameMode_Untitled.et" {
+ components {
+  SCR_RespawnSystemComponent "{56B2B4793051E7C9}" {
+   m_SpawnLogic MI3_GameModeSpawnLogic "{5F194D814AA9EF00}" {
+   }
+  }
+ }
+ coords 3103.526 43.937 2431.012
+ angleY 169.721
+}
+GenericEntity : "{1353C6EAD1DCFE43}Prefabs/Weapons/Handguns/M9/Handgun_M9.et" {
+ coords 3103.98 44.088 2427.206
+}
+Vehicle S105_lightgreen1 : "{321016E0F9361A22}Prefabs/Vehicles/Wheeled/S105/S105_lightgreen.et" {
+ coords 3108.977 43.766 2431.708
+}
+GenericEntity : "{3E413771E1834D2F}Prefabs/Weapons/Rifles/M16/Rifle_M16A2.et" {
+ coords 3110.564 43.723 2432.406
+}
+Vehicle S105_rally1 : "{5555DCAFADB8CE2A}Prefabs/Vehicles/Wheeled/S105/S105_rally.et" {
+ coords 3110.935 44.583 2402.989
+ angleY -38.523
+}
+GenericEntity : "{5C5C6EE05EE2FF1A}Prefabs/Items/Equipment/Backpacks/Backpack_ALICE_Medium_assembled.et" {
+ coords 3103.532 44.064 2428.22
+}
+$grp MI3_Garrison : "{8423072B564BFCD4}Prefabs/MP/Modes/Untitled/Garrison/Garrison_USSR.et" {
+ {
+  components {
+   MI3_GarrisonGroupManagerComponent "{60E30C182E222436}" {
+    m_aInitialGroups {
+     0 4
+    }
+   }
+  }
+  coords 3137.644 11.625 2766.233
+  m_sName "Beauregard"
+ }
+ {
+  components {
+   MI3_GarrisonGroupManagerComponent "{60E30C182E222436}" {
+    m_aInitialGroups {
+     0
+    }
+   }
+  }
+  coords 1168.087 1.129 3313.629
+  m_sName "Port"
+ }
+ {
+  components {
+   MI3_GarrisonGroupManagerComponent "{60E30C182E222436}" {
+    m_aInitialGroups {
+     0 3
+    }
+   }
+  }
+  coords 2031.99 51.879 3055.271
+  m_sName "Farm"
+ }
+}
+MI3_Garrison : "{9FC91FDAC14D9291}Prefabs/MP/Modes/Untitled/Garrison/Garrison_FIA.et" {
+ components {
+  MI3_GarrisonGroupManagerComponent "{60E30C182E222436}" {
+   m_aInitialGroups {
+    0 0 2
+   }
+  }
+ }
+ coords 1445.93 38.01 2911.076
+ m_sName "Airfield"
+}
+Vehicle UAZ469_covered_CIV_red1 : "{A4D16A62B432451A}Prefabs/Vehicles/Wheeled/UAZ469/UAZ469_covered_CIV_red.et" {
+ coords 3112.431 43.865 2432.9
+ angleY -19.582
+}
+SCR_LoadoutManager : "{C95D538A2EFBECF7}Prefabs/MP/Modes/Untitled/UntitledLoadoutManager.et" {
+ coords 3104.773 43.913 2430.995
+}
+$grp GenericEntity : "{EFA7233213E77C2E}Prefabs/Systems/SpawnPoints/SpawnPosition.et" {
+ {
+  coords 3099.559 44.492 2437.448
+  angleY -27.83
+ }
+ {
+  coords 3104.164 44.498 2441.854
+ }
+ {
+  coords 3109.032 44.492 2436.523
+ }
+ {
+  coords 3095.754 44.492 2432.406
+ }
+}
+SCR_PlayerSpawnPoint : "{F6CAD21EDD2D1964}Prefabs/MP/Spawning/PlayerSpawnPoint.et" {
+ coords 3104.801 43.9 2431.623
+ m_sFaction "FIA"
+ m_bUseNearbySpawnPositions 1
+}

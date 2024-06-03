@@ -1,0 +1,77 @@
+FrameWidgetClass {
+ Name "rootFrame"
+ {
+  SizeLayoutWidgetClass "{608D6BD66138781B}" {
+   Name "SizeLayout"
+   Slot FrameWidgetSlot "{608D6BD66138783B}" {
+    Anchor 0 0 1 1
+    PositionX 0
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX 0
+    OffsetRight 0
+    SizeY 0
+    OffsetBottom 0
+   }
+   {
+    OverlayWidgetClass "{608D6BD6709D886D}" {
+     Name "HUDOverlay"
+     Slot AlignableSlot "{608D6BD6709D8807}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     {
+      FrameWidgetClass "{608D6BD6FAFA6813}" {
+       Name "Frame0"
+       Slot OverlayWidgetSlot "{608D6BD6FAFA6834}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+        Padding 200 10 200 900
+       }
+       {
+        HorizontalLayoutWidgetClass "{608D6BD6D418C987}" {
+         Name "HorizontalLayout0"
+         Slot FrameWidgetSlot "{608D6BD6F348D32B}" {
+          Anchor 0 0 1 1
+          PositionX 0
+          OffsetLeft 0
+          PositionY 0
+          OffsetTop 0
+          SizeX -1420
+          OffsetRight 0
+          SizeY -540
+          OffsetBottom 0
+         }
+         {
+          VerticalLayoutWidgetClass "{608D6BD6AF114CAE}" {
+           Name "VerticalLayout0"
+           Slot LayoutSlot "{60AD4C9B156C2220}" {
+            HorizontalAlign 3
+            VerticalAlign 1
+            SizeMode Fill
+           }
+           {
+            RichTextWidgetClass "{608D6BD6BA641F99}" {
+             Name "UndercoverState"
+             Slot LayoutSlot "{608D6BD6BA641FB8}" {
+              HorizontalAlign 1
+             }
+             Text "Undercover"
+             "Font Size" 58
+             FontProperties FontProperties "{608D6BD77D1584D4}" {
+              Font "{DE4B66C39B62E39B}UI/Fonts/Purista/Purista Medium.fnt"
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

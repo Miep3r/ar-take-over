@@ -1,0 +1,66 @@
+OverlayWidgetClass {
+ Name "SaveGameList"
+ Slot OverlayWidgetSlot "{60D207A62F06708A}" {
+  HorizontalAlign 3
+  VerticalAlign 3
+ }
+ components {
+  MI3_SaveGameList "{60D2F0E2AA871412}" {
+  }
+ }
+ {
+  VerticalLayoutWidgetClass "{60D207A64DB6E00A}" {
+   Name "SubMenuLayout"
+   Slot OverlayWidgetSlot "{60D207A64DB6E0DE}" {
+    HorizontalAlign 3
+    VerticalAlign 3
+   }
+   {
+    ButtonWidgetClass "{60D207A65718151F}" : "{7B140983F0110503}UI/layouts/WidgetLibraryExtended/Buttons/WLib_AddNewButton.layout" {
+     Name "AddButton"
+     Slot LayoutSlot "{60D207A657181532}" {
+      FillWeight 0.1
+     }
+    }
+    OverlayWidgetClass "{60D211E39A1FEA90}" {
+     Name "Content"
+     Slot LayoutSlot "{60D211E39A1FEAB1}" {
+     }
+     {
+      SizeLayoutWidgetClass "{60D211E3DE945170}" {
+       Name "ContentSizeConstraint"
+       Slot OverlayWidgetSlot "{60D211E3DE945094}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+        Padding 0 20 0 0
+       }
+       HeightOverride 500
+       {
+        ScrollLayoutWidgetClass "{60D2F0E35B67B69E}" {
+         Name "ScrollLayout0"
+         Slot AlignableSlot "{60D2F0E356B420DE}" {
+          HorizontalAlign 3
+          VerticalAlign 3
+         }
+         Color 0.88 0.451 0.084 1
+         style Small
+         "Scrollbar Always Visible" 1
+         {
+          VerticalLayoutWidgetClass "{60D211E395FB1452}" {
+           Name "ItemList"
+           Slot AlignableSlot "{60D2F0E36851B200}" {
+            HorizontalAlign 3
+            VerticalAlign 3
+            Padding 0 0 10 0
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

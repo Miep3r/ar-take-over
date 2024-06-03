@@ -1,0 +1,275 @@
+FrameWidgetClass {
+ Name "rootFrame"
+ {
+  BlurWidgetClass "{60D207A2177F841C}" {
+   Name "Blur"
+   Slot FrameWidgetSlot "{60D207A2177F843D}" {
+    Anchor 0 0 1 1
+    PositionX 0
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX -1820
+    OffsetRight 0
+    SizeY -1050
+    OffsetBottom 0
+   }
+  }
+  SizeLayoutWidgetClass "{60D207A223063937}" {
+   Name "SizeBase"
+   Slot FrameWidgetSlot "{60D207A22306392B}" {
+    Anchor 0.5 0.5 0.5 0.5
+    OffsetLeft 0
+    OffsetTop 0
+    OffsetRight -100
+    OffsetBottom -30
+    Alignment 0.5 0.5
+    SizeToContent 1
+   }
+   AllowWidthOverride 1
+   WidthOverride 876
+   AllowHeightOverride 1
+   HeightOverride 750
+   {
+    OverlayWidgetClass "{60D207A270741A0A}" {
+     Name "Menu"
+     Slot AlignableSlot "{60D207A04FC8E8CA}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     {
+      ImageWidgetClass "{60D207A260322917}" {
+       Name "Background"
+       Slot OverlayWidgetSlot "{60D207A60C7B4840}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+       Color 0.007 0.012 0.014 1
+      }
+      VerticalLayoutWidgetClass "{60D207A268023DE8}" {
+       Name "MenuLayout"
+       Slot OverlayWidgetSlot "{60D207A60C7B487C}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+       {
+        ImageWidgetClass "{60D207A1187D494C}" {
+         Name "TopSeperator"
+         Slot LayoutSlot "{5CCCB0B139903607}" {
+          Padding 20 10 20 10
+         }
+         "Z Order" 1
+         Color 0.015 0.028 0.033 1
+         Size 32 2
+         "Blend Mode" Opaque
+        }
+        ImageWidgetClass "{60D207A07446D0CA}" {
+         Name "BottomSeperator"
+         Slot LayoutSlot "{5CCCB0B139903607}" {
+          Padding 20 10 20 10
+         }
+         "Z Order" 2
+         Color 0.015 0.028 0.033 1
+         Size 32 2
+         "Blend Mode" Opaque
+        }
+        HorizontalLayoutWidgetClass "{60D207A2DD665EB1}" {
+         Name "Header"
+         Slot LayoutSlot "{60D207A2DD665D59}" {
+          HorizontalAlign 0
+          Padding 28 30 0 0
+         }
+         {
+          SizeLayoutWidgetClass "{60D207A2F8BC1D55}" {
+           Name "IconSize"
+           Slot LayoutSlot "{60D207A2F8BC1D74}" {
+           }
+           AllowHeightOverride 1
+           HeightOverride 48
+           AllowMinDesiredHeight 1
+           MinDesiredHeight 48
+           AllowMaxDesiredWidth 1
+           MaxDesiredWidth 48
+           {
+            ImageWidgetClass "{60D207A2F38FD300}" {
+             Name "HeaderIcon"
+             Slot AlignableSlot "{60D207A2F38FCDC0}" {
+             }
+             Color 0.88 0.451 0.084 1
+             Texture "{9C493CD16B0E127C}UI/Textures/MainMenu/Icons/Fieldmanual_textured_Icon_UI.edds"
+             Size 152 152
+            }
+           }
+          }
+          SizeLayoutWidgetClass "{60D207A2FA52A327}" {
+           Name "TitleSize"
+           Slot LayoutSlot "{60D207A2F8BC1D74}" {
+            Padding 8 0 0 0
+           }
+           AllowWidthOverride 1
+           WidthOverride 756
+           {
+            TextWidgetClass "{60D207A30E1B5589}" {
+             Name "Title"
+             Slot AlignableSlot "{60D207A30E1B4F7A}" {
+              HorizontalAlign 3
+              VerticalAlign 3
+             }
+             Text "Savegames"
+             "Font Size" 32
+             "Min Font Size" 14
+             "Vertical Alignment" Center
+             FontProperties FontProperties "{60D207A3AF994146}" {
+              Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+              ShadowOffset 0 0
+             }
+            }
+           }
+          }
+         }
+        }
+        OverlayWidgetClass "{60D207A087115552}" {
+         Name "Content"
+         Slot LayoutSlot "{60D207A60C7B4881}" {
+          Padding 36 12 36 12
+         }
+         "Z Order" 1
+         {
+          SizeLayoutWidgetClass "{60D207A0D30BC4B2}" {
+           Name "ContentSizeConstraint"
+           Slot OverlayWidgetSlot "{60D207A0D30BC355}" {
+            HorizontalAlign 3
+            VerticalAlign 3
+           }
+           AllowHeightOverride 1
+           HeightOverride 525
+           {
+            OverlayWidgetClass "{60D2F0E292F3C8BC}" : "{32B17DF7C2A250CA}UI/layouts/UntitledGamemode/SavesMenu/SaveGameList.layout" {
+             Name "SaveGameList"
+             Slot AlignableSlot "{60D2F0E292F3F756}" {
+              HorizontalAlign 3
+              VerticalAlign 3
+             }
+             {
+              VerticalLayoutWidgetClass "{60D207A64DB6E00A}" {
+               Prefab "{60D207A64DB6E00A}"
+               {
+                ButtonWidgetClass "{60D207A65718151F}" {
+                 Prefab "{60D207A65718151F}"
+                 components {
+                  SCR_ModularButtonComponent "{60988C653FF8C4F0}" {
+                   m_aEffects {
+                    SCR_ButtonEffectText "{6166A943647DFB45}" {
+                     m_eEvents STATE_DEFAULT
+                     m_sWidgetName "Text"
+                     m_sDefault "Create New Savegame"
+                    }
+                   }
+                  }
+                 }
+                }
+                OverlayWidgetClass "{60D211E39A1FEA90}" {
+                 Prefab "{60D211E39A1FEA90}"
+                 {
+                  SizeLayoutWidgetClass "{60D211E3DE945170}" {
+                   Prefab "{60D211E3DE945170}"
+                   Slot OverlayWidgetSlot "{60D211E3DE945094}" {
+                   }
+                   AllowHeightOverride 1
+                   HeightOverride 420
+                   {
+                    ScrollLayoutWidgetClass "{60D2F0E35B67B69E}" {
+                     Prefab "{60D2F0E35B67B69E}"
+                     "Scrollbar Always Visible" 1
+                    }
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+        HorizontalLayoutWidgetClass "{60D21932D7FD7EBC}" {
+         Name "Footer"
+         Slot LayoutSlot "{60D21932D7FD7D5F}" {
+          SizeMode Fill
+         }
+         "Z Order" 3
+         {
+          HorizontalLayoutWidgetClass "{60D219332B5B5EE8}" : "{A24A95BDE034CD91}UI/layouts/Common/Buttons/NavigationBar.layout" {
+           Name "rootFrame0"
+           Slot LayoutSlot "{60D219332B5B5E9A}" {
+            VerticalAlign 1
+            Padding 40 0 40 0
+           }
+           {
+            ButtonWidgetClass "{60D2193338341DA5}" : "{08CF3B69CB1ACBC4}UI/layouts/WidgetLibrary/Buttons/WLib_NavigationButton.layout" {
+             Name "Back"
+             Slot LayoutSlot "{60D2193338341C47}" {
+              HorizontalAlign 3
+              VerticalAlign 3
+              Padding 0 0 20 0
+             }
+             components {
+              SCR_InputButtonComponent "{5D346C3DD81D95CD}" {
+               m_sActionName "MenuBack"
+               m_sLabel "#AR-Workshop_ButtonCancel"
+              }
+             }
+            }
+           }
+          }
+          HorizontalLayoutWidgetClass "{60D2CD665028EBE1}" : "{A24A95BDE034CD91}UI/layouts/Common/Buttons/NavigationBar.layout" {
+           Name "rootFrame1"
+           Slot LayoutSlot "{60D2CD665028EB8B}" {
+            VerticalAlign 1
+            Padding 40 0 40 0
+            SizeMode Fill
+           }
+           "Fill Origin" Right
+           {
+            ButtonWidgetClass "{60D219335AD7CB13}" : "{08CF3B69CB1ACBC4}UI/layouts/WidgetLibrary/Buttons/WLib_NavigationButton.layout" {
+             Name "Confirm"
+             Slot LayoutSlot "{60D2193338341C47}" {
+              HorizontalAlign 3
+              VerticalAlign 3
+              Padding 0 0 20 0
+             }
+             components {
+              SCR_InputButtonComponent "{5D346C3DD81D95CD}" {
+               m_sActionName "MenuSelect"
+               m_sLabel "#MI3_SaveGame_Load"
+              }
+             }
+            }
+            ButtonWidgetClass "{60D2CD668624E7AD}" : "{08CF3B69CB1ACBC4}UI/layouts/WidgetLibrary/Buttons/WLib_NavigationButton.layout" {
+             Name "Delete"
+             Slot LayoutSlot "{60D2193338341C47}" {
+              HorizontalAlign 3
+              VerticalAlign 3
+              Padding 0 0 20 0
+             }
+             components {
+              SCR_InputButtonComponent "{5D346C3DD81D95CD}" {
+               m_sActionName "MenuUnsubscribeAll"
+               m_sLabel "#MI3_SaveGame_Delete"
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

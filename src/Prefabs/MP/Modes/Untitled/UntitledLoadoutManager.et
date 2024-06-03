@@ -1,0 +1,11 @@
+SCR_LoadoutManager : "{AA4E7419A1FF65B0}Prefabs/MP/Managers/Loadouts/LoadoutManager_Base.et" {
+ ID "56B2B47708C4F23A"
+ coords 0 0 0
+ m_aPlayerLoadouts {
+  SCR_FactionPlayerLoadout "{60AF705B6E420FA4}" {
+   m_sLoadoutName "Base"
+   m_sLoadoutResource "{3A99A99836F6B3DC}Prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Unarmed.et"
+   m_sAffiliatedFaction "FIA"
+  }
+ }
+}

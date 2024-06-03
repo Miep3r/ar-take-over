@@ -1,0 +1,25 @@
+SCR_AIWorld : "{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et" {
+ coords 4.722 1 6.622
+}
+PerceptionManager PerceptionManager1 : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
+ coords 39.177 1 28.666
+}
+MI3_GameMode GameMode_Untitled1 : "{CAD78FAE87512420}Prefabs/MP/Modes/Untitled/GameMode_Untitled.et" {
+ coords 2.07 1 2.199
+ m_sTestGroupResource "{5BEA04939D148B1E}Prefabs/Groups/INDFOR/Group_FIA_FireTeam.et"
+}
+GenericEntity : "{06B68C58B72EAAC6}Prefabs/Items/Equipment/Backpacks/Backpack_ALICE_Medium.et" {
+ coords 2.694 1 4.721
+}
+HitRegistrationManager HitRegManager1 : "{0EDA3D48791120DD}Prefabs/MP/HitRegManager.et" {
+ coords 9.04 1 8.211
+}
+SCR_AIGroup : "{242BC3C6BCE96EA5}Prefabs/Groups/INDFOR/Group_FIA_Base.et" {
+ coords 12.948 1 11.654
+ m_aUnitPrefabSlots {
+  "{3A99A99836F6B3DC}Prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Unarmed.et"
+ }
+}
+GenericEntity : "{3E413771E1834D2F}Prefabs/Weapons/Rifles/M16/Rifle_M16A2.et" {
+ coords 2.385 1 6.589
+}

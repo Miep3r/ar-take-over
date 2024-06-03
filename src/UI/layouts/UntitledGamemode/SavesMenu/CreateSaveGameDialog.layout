@@ -1,0 +1,176 @@
+FrameWidgetClass {
+ Name "rootFrame"
+ {
+  ImageWidgetClass "{60D2F0E4E34E3B6D}" {
+   Name "Background"
+   Slot FrameWidgetSlot "{60D2F0E4E34E3B78}" {
+    Anchor 0 0 1 1
+    PositionX 0
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX -1820
+    OffsetRight 0
+    SizeY -1050
+    OffsetBottom 0
+   }
+   Color 0 0 0 0.469
+  }
+  BlurWidgetClass "{60D2F0E8136ED2B6}" {
+   Name "Blur"
+   Slot FrameWidgetSlot "{60D2F0E8136ED291}" {
+    Anchor 0 0 1 1
+    PositionX 0
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX -1820
+    OffsetRight 0
+    SizeY -1050
+    OffsetBottom 0
+   }
+  }
+  SizeLayoutWidgetClass "{60D2F0E492685226}" {
+   Name "DialogSizeConstraint"
+   Slot FrameWidgetSlot "{60D2F0E492685233}" {
+    PositionX 960
+    OffsetLeft 960
+    PositionY 540
+    OffsetTop 540
+    SizeX 0
+    OffsetRight -960
+    SizeY 0
+    OffsetBottom -540
+    Alignment 0.5 0.5
+    SizeToContent 1
+   }
+   WidthOverride 600
+   HeightOverride 200
+   AllowMinDesiredWidth 1
+   MinDesiredWidth 600
+   {
+    OverlayWidgetClass "{60D2F0E4B2868152}" {
+     Name "Overlay0"
+     Slot AlignableSlot "{60D2F0E4B28681A2}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     {
+      ImageWidgetClass "{60D2F0E50717DDCC}" {
+       Name "Background"
+       Slot OverlayWidgetSlot "{60D2F0E50717DDDE}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+       Color 0.007 0.012 0.014 1
+      }
+      VerticalLayoutWidgetClass "{60D2F0E52C623E7A}" {
+       Name "DialogLayout"
+       Slot OverlayWidgetSlot "{60D2F0E52C623E41}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+       {
+        ImageWidgetClass "{60D2F0EA86741C0B}" {
+         Name "TopSeperator"
+         Slot LayoutSlot "{5CCCB0B139903607}" {
+          Padding 20 10 20 10
+         }
+         "Z Order" 1
+         Color 0.015 0.028 0.033 1
+         Size 32 2
+         "Blend Mode" Opaque
+        }
+        ImageWidgetClass "{60D2F0EA982CD7A7}" {
+         Name "BottomSeperator"
+         Slot LayoutSlot "{5CCCB0B139903607}" {
+          Padding 20 10 20 10
+         }
+         "Z Order" 3
+         Color 0.015 0.028 0.033 1
+         Size 32 2
+         "Blend Mode" Opaque
+        }
+        HorizontalLayoutWidgetClass "{60D2F0E55A7BDF3D}" {
+         Name "Header"
+         Slot LayoutSlot "{60D2F0E55A7BDF0A}" {
+          Padding 10 30 10 10
+         }
+         {
+          TextWidgetClass "{60D2F0E52612310F}" {
+           Name "Title"
+           Slot LayoutSlot "{60D2F0E52612311A}" {
+            SizeMode Fill
+           }
+           Text "Enter Savegame Name"
+           "Horizontal Alignment" Center
+          }
+         }
+        }
+        VerticalLayoutWidgetClass "{60D2F0E589C79025}" {
+         Name "Content"
+         Slot LayoutSlot "{60D2F0E589C79030}" {
+          Padding 10 0 10 0
+         }
+         "Z Order" 2
+         {
+          ButtonWidgetClass "{60D2F0E549D3F551}" : "{0022F0B45ADBC5AC}UI/layouts/WidgetLibrary/EditBox/WLib_EditBox.layout" {
+           Name "EditBox"
+           Slot LayoutSlot "{60D2F0E549D3F5A5}" {
+            HorizontalAlign 3
+            Padding 4 4 4 4
+           }
+           components {
+            SCR_EditBoxComponent "{547290FFBD5B33E9}" {
+             m_bUseLabel 0
+            }
+           }
+          }
+         }
+        }
+        HorizontalLayoutWidgetClass "{60D2F0E5B73414E8}" {
+         Name "Footer"
+         Slot LayoutSlot "{60D2F0E5B73414F7}" {
+          Padding 10 10 10 10
+         }
+         "Z Order" 4
+         "Fill Origin" Center
+         {
+          ButtonWidgetClass "{60D2F0EA178F79E2}" : "{08CF3B69CB1ACBC4}UI/layouts/WidgetLibrary/Buttons/WLib_NavigationButton.layout" {
+           Name "Cancel"
+           Slot LayoutSlot "{60D2F0EA00F09E2C}" {
+            VerticalAlign 3
+            Padding 0 0 20 0
+            FillWeight 0.5
+           }
+           components {
+            SCR_InputButtonComponent "{5D346C3DD81D95CD}" {
+             m_sActionName "MenuBack"
+             m_sLabel "#MI3_MenuBack"
+            }
+           }
+          }
+          ButtonWidgetClass "{60D2F0EA00F09FC5}" : "{08CF3B69CB1ACBC4}UI/layouts/WidgetLibrary/Buttons/WLib_NavigationButton.layout" {
+           Name "Confirm"
+           Slot LayoutSlot "{60D2F0EA00F09E2C}" {
+            VerticalAlign 3
+            Padding 0 0 20 0
+            FillWeight 0.5
+           }
+           components {
+            SCR_InputButtonComponent "{5D346C3DD81D95CD}" {
+             m_sActionName "MenuSelectHold"
+             m_sLabel "#MI3_MenuAccept"
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

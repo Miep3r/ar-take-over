@@ -1,0 +1,21 @@
+MI3_Garrison {
+ ID "60E30C182E22240C"
+ components {
+  MI3_GarrisonGroupManagerComponent "{60E30C182E222436}" {
+   m_aInitialGroups {
+   }
+   m_sDefendWaypointPrefab "{AAE8882E0DE0761A}Prefabs/AI/Waypoints/AIWaypoint_Defend_Hierarchy.et"
+  }
+  MI3_GarrisonSpawnHandlerComponent "{60E30C182E222433}" {
+  }
+  MapDescriptorComponent "{60E30C182E222431}" {
+   DisplayName "Garrison"
+   ImagesetQuadElement "USSR_Base"
+   MainType "Military Base"
+   Scale 0
+  }
+  RplComponent "{60E30C182E22243A}" {
+  }
+ }
+ coords 1440.71 38.031 2909.174
+}

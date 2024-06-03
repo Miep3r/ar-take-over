@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{8D1D7B8B39F357B0}Prefabs/Characters/Factions/INDFOR/FIA"
+ Configurations {
+  FolderResourceClass PC {
+  }
+  FolderResourceClass XBOX_ONE : PC {
+  }
+  FolderResourceClass XBOX_SERIES : PC {
+  }
+  FolderResourceClass PS4 : PC {
+  }
+  FolderResourceClass PS5 : PC {
+  }
+  FolderResourceClass HEADLESS : PC {
+  }
+ }
+}

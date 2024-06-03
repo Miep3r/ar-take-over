@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{C9E3D45B934D9C11}UI/layouts/UntitledGamemode"
+ Configurations {
+  FolderResourceClass PC {
+  }
+  FolderResourceClass XBOX_ONE : PC {
+  }
+  FolderResourceClass XBOX_SERIES : PC {
+  }
+  FolderResourceClass PS4 : PC {
+  }
+  FolderResourceClass HEADLESS : PC {
+  }
+ }
+}

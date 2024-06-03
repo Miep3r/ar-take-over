@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{6C7D8A1B5D4EFBBE}Prefabs/MP/Modes/Untitled"
+ Configurations {
+  FolderResourceClass PC {
+  }
+  FolderResourceClass XBOX_ONE : PC {
+  }
+  FolderResourceClass XBOX_SERIES : PC {
+  }
+  FolderResourceClass PS4 : PC {
+  }
+  FolderResourceClass HEADLESS : PC {
+  }
+ }
+}
