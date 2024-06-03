@@ -2,7 +2,7 @@
 
 ## Garrisons
 
-## Undercover mechanic
+## Undercover system
 The player has three possible undercover states:
 
 - Undercover
